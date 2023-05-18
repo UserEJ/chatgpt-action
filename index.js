@@ -4,7 +4,7 @@ const { createChatGPTAPI } = require("./chatgpt");
 const { runPRReview } = require("./run");
 
 // most @actions toolkit packages have async methods
-async function run() {
+function run() {
   try {
     const number = parseInt(core.getInput("number"));
     const sessionToken = core.getInput("sessionToken");
